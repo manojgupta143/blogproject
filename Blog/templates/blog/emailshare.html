@@ -1,0 +1,28 @@
+<!doctype html> {%extends "blog/base.html" %} {% block title_block %}share Form{%endblock%} {% block body_block %}
+<div class="share">
+    <h1>Manoj Blog Project</h1>
+    <h2> Do You Want to share {{post.title|title}}</h2>
+    <p>Do You Want to Share th Content by Email Please Provide Your Information</p>
+</div>
+<div class="email-detail">
+    {%if sent%}
+    <div class="alert alert-success" role="alert">
+        <h1>Email Successfully Sent !!!</h1>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        {{post.title}} was Sent by Email
+    </div>
+    {%else%}
+    <div>
+        <h1>Share {{post.title}} by Email!!!"</h1>
+        <form method="post">
+            {{form.as_p}} {%csrf_token%}
+            <input type="submit" class='btn btn-primary btn-lg' value="Share By Email">
+        </form>
+    </div>
+
+</div>
+
+
+{% endif %} {% endblock %}

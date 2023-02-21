@@ -1,0 +1,638 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin-top: 40px;
+        font-family: 'Roboto Mono', monospace;
+        background-color: black;
+        color: white;
+        margin-bottom: 50px;
+    }
+    
+    .navbar {
+        padding: 0.1rem 1rem;
+    }
+    
+    .bg-primary {
+        background-color: #0805a7!important;
+    }
+    /* Css For Mobile Resultion*/
+    
+    @media only screen and (max-width: 600px) {
+        .navbar {
+            padding: 0.1rem 1rem;
+        }
+        .bg-primary {
+            background-color: #b90707!important;
+        }
+        .fcontainer {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            margin-top: 3px;
+            background-color: black;
+            box-sizing: content-box;
+        }
+        .fcontainer h1 {
+            font-size: 2.5rem;
+            color: white;
+            align-items: center;
+            padding-left: 25px;
+        }
+        .fcontainer p {
+            font-size: 24px;
+            color: white;
+        }
+        .item1 {
+            padding-left: 10px;
+            align-items: center;
+            color: white;
+            width: 100%;
+            background-color: rgb(245, 41, 41);
+            padding-left: 20px;
+            list-style: none;
+        }
+        .fcontainer h1 {
+            font-size: 2.5rem;
+            color: white;
+            align-items: center;
+            padding-left: 25px;
+        }
+        .fcontainer p {
+            font-size: 24px;
+            color: white;
+        }
+        .item1 {
+            padding-left: 10px;
+            margin-top: 0;
+            align-items: center;
+            color: white;
+            width: 100%;
+            background-color: rgb(253, 6, 6);
+            padding-left: 20px;
+            list-style: none;
+        }
+        .item1 h3 {
+            font-size: 35px;
+        }
+        .item1 span ul {
+            font-size: 27px;
+            list-style: none;
+        }
+        .item1 span ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(175, 181, 241);
+        }
+        .item1 ul li a:hover {
+            color: wheat;
+            background-color: rgb(11, 231, 30);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid rgb(236, 168, 236);
+        }
+        .item2 {
+            align-items: center;
+            color: white;
+            width: 100%;
+            background-color: rgb(11, 206, 27);
+            padding-left: 20px;
+            list-style: none;
+        }
+        .item1 h2 {
+            font-size: 40px;
+        }
+        .item2 ul {
+            list-style: none;
+        }
+        .item2 ul li a {
+            color: white;
+            font-size: 27px;
+            font-style: italic;
+            cursor: pointer;
+        }
+        .item2 ul li a:hover {
+            color: wheat;
+            background-color: rgb(199, 21, 21);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid rgb(236, 168, 236);
+        }
+        .d-flex {
+            flex-direction: row;
+            width: 370px;
+            height: 40px;
+        }
+        .d-flex a {
+            padding: 10px;
+            color: white;
+            justify-content: center;
+            padding-top: 3px;
+            font-size: 1.3rem;
+            border: 2px solid #ddddeb;
+            margin-left: 12px;
+            border-radius: 8px;
+        }
+        .d-flex a:hover {
+            background-color: rgb(216, 54, 54);
+            color: rgb(255, 254, 254);
+            border: 2px solid green;
+        }
+        /*Content Block Css For Mobile Resulation */
+        .continer {
+            width: 100%;
+        }
+        .continer h1 {
+            font-size: 2.5rem;
+            padding-top: 15px;
+        }
+        .blog-item {
+            margin-top: 15px;
+            margin-right: 5px;
+            text-align: center;
+            border: 2px solid rgb(243, 210, 210);
+            border-radius: 8px;
+        }
+        .blog-item h2 {
+            font-size: 2.3rem;
+            color: rgb(255, 0, 0);
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .tagitem {
+            width: 100%;
+            height: 40px;
+        }
+        .tagitem p {
+            color: green;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .tagitem p a {
+            background-color: rgb(241, 41, 15);
+            color: white;
+            border: 2px wheat solid;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 1rem;
+        }
+        .tagitem p a:hover {
+            background-color: rgb(238, 40, 40);
+            width: 40px;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid green;
+        }
+        .author {
+            margin: auto;
+            text-align: center;
+            border: 2px solid red;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+            background-color: #c52030;
+            border-radius: 6px;
+            height: 300px;
+            font-size: 1.2rem;
+        }
+        .pagination {
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        .card {
+            background-color: black;
+            height: 700px;
+        }
+        .btn {
+            color: white;
+            background-color: red;
+            margin-bottom: 12px;
+            border: 2px solid white;
+        }
+        .continar {
+            margin-top: 60px;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        /* detail pge styling  */
+        .continar-detail {
+            width: 100%;
+            text-align: center;
+        }
+        .scroll {
+            background-color: #200cdb;
+            width: 100%;
+            height: 500px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .continar-detail h1 {
+            font-weight: bold;
+            font-size: 1.9rem;
+            padding-top: 20px;
+        }
+        .continar-detail h2 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-top: 10px;
+        }
+        .continar-detail a {
+            margin-top: 25px;
+            border: 2px solid wheat;
+        }
+        h5 {
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding-top: 10px;
+        }
+        .commets {
+            background-color: white;
+            color: black;
+        }
+        div.cb {
+            background-color: white;
+            color: black;
+            font-style: italic;
+            width: 100%;
+        }
+        .comment-form {
+            background-color: green;
+            color: white;
+            height: 600px;
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+        .comment-form .btn {
+            margin-left: 180px;
+        }
+        .share {
+            background-color: red;
+            text-align: center;
+            width: 100%;
+            margin-left: 10;
+            border: 6px;
+            margin-top: 5px;
+        }
+        .share h1 {
+            font-weight: bolder;
+        }
+        .share h2 {
+            font-weight: bolder;
+        }
+        .share p {
+            font-size: 1.2rem;
+            font-style: oblique;
+        }
+        .email-detail {
+            width: 100%;
+            background-color: green;
+        }
+        .email-detail h1 {
+            font-weight: bold;
+            font-size: 2rem;
+            padding-bottom: 20px;
+        }
+    }
+    /* css styling fordetail page 
+                    
+ /*   Css For large display  */
+    
+    @media only screen and (min-width: 600px) {
+        .fcontainer {
+            display: flex;
+            height: 90vh;
+            width: 30%;
+            float: right;
+            flex-direction: column;
+            box-sizing: content-box;
+        }
+        .fcontainer h1 {
+            font-size: 2.5rem;
+            color: white;
+            align-items: center;
+            padding-top: 25px;
+        }
+        .fcontainer p {
+            font-size: 24px;
+            color: white;
+        }
+        .item1 {
+            align-items: center;
+            color: white;
+            background-color: rgb(253, 6, 6);
+            padding-left: 20px;
+            list-style: none;
+            border-radius: 8px;
+        }
+        .item1 h3 {
+            font-size: 35px;
+        }
+        .item1 span ul {
+            font-size: 27px;
+            list-style: none;
+        }
+        .item1 span ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+        }
+        .item1 ul li a:hover {
+            background-color: rgb(4, 185, 28);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid rgb(236, 168, 236);
+        }
+        .item2 {
+            align-items: center;
+            color: white;
+            background-color: rgb(11, 206, 27);
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+        .item1 h2 {
+            font-size: 40px;
+        }
+        .item2 ul {
+            list-style-type: none;
+        }
+        .item2 ul li a {
+            color: white;
+            font-size: 27px;
+            font-style: italic;
+            cursor: pointer;
+        }
+        .item2 ul li a:hover {
+            background-color: rgb(238, 43, 43);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid rgb(236, 168, 236);
+        }
+        .d-flex {
+            flex-direction: row;
+            margin-left: 248px;
+            width: 370px;
+            height: 40px;
+        }
+        .d-flex a {
+            padding: 10px;
+            color: white;
+            justify-content: center;
+            padding-top: 3px;
+            font-size: 1.3rem;
+            border: 2px solid #ddddeb;
+            margin-left: 12px;
+            border-radius: 8px;
+        }
+        .d-flex a:hover {
+            background-color: rgb(216, 54, 54);
+            color: rgb(255, 254, 254);
+            border: 2px solid green;
+        }
+        /* navigation bar work finished */
+        /*  home page Css  */
+        .continer {
+            width: 70%;
+        }
+        .continer h1 {
+            font-size: 2.5rem;
+            padding-top: 15px;
+        }
+        .blog-item {
+            margin-top: 20px;
+            margin-right: 5px;
+            text-align: center;
+            border: 2px solid rgb(243, 210, 210);
+            border-radius: 8px;
+        }
+        .blog-item h2 {
+            font-size: 2.3rem;
+            color: rgb(255, 0, 0);
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .tagitem {
+            width: 100%;
+            height: 40px;
+        }
+        .tagitem p {
+            color: green;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .tagitem p a {
+            background-color: rgb(18, 216, 35);
+            color: white;
+            border: 2px solid wheat;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 1rem;
+        }
+        .tagitem p a:hover {
+            background-color: red;
+            width: 40px;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid rgb(237, 240, 237);
+        }
+        .author {
+            margin: auto;
+            text-align: center;
+            border: 2px solid rgb(240, 222, 222);
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #c52030;
+            border-radius: 6px;
+            height: 200px;
+            font-size: 1.2rem;
+        }
+        .pagination {
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        /*Signup page css */
+        .card {
+            background-color: rgb(73, 116, 236);
+            width: 700px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .text-center {
+            margin-top: 30px;
+        }
+        .text-center h3 {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .text-center a {
+            font-size: 1rem;
+            font-style: italic;
+            color: rgb(252, 247, 247);
+            background-color: green;
+            padding: 2px;
+            width: 30px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        .text-center a:hover {
+            color: white;
+            background-color: red;
+            width: 40px;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn {
+            color: white;
+            background-color: red;
+            border-radius: 8px;
+        }
+        /* Login Form Styling */
+        .continar {
+            margin-top: 60px;
+            width: 23%;
+            height: 500px;
+            margin-left: 247px;
+            text-align: center;
+        }
+        .continar h3 {
+            font-weight: bold;
+            font-size: 1.9rem;
+            padding-top: 40px;
+            margin-bottom: 20px;
+        }
+        /* Detail Page Styling */
+        .continar-detail {
+            width: 70%;
+            text-align: center;
+        }
+        .scroll {
+            background-color: #200cdb;
+            width: 900px;
+            height: 700px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px;
+            border-radius: 8px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+        .continar-detail h1 {
+            font-weight: bold;
+            font-size: 1.9rem;
+            padding-top: 20px;
+        }
+        .continar-detail h2 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-top: 10px;
+        }
+        .continar-detail a {
+            margin-top: 25px;
+            border: 2px solid wheat;
+        }
+        h5 {
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding-top: 10px;
+        }
+        .commets {
+            background-color: white;
+            color: black;
+        }
+        .cb {
+            margin-right: 20px;
+            width: 70%;
+        }
+        .comment-form {
+            background-color: green;
+            color: white;
+            height: 500px;
+            width: 100%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .comment-form .btn {
+            margin-left: 180px;
+        }
+        .share {
+            background-color: red;
+            text-align: center;
+            width: 1042px;
+            float: left;
+            border: 6px;
+        }
+        .share h1 {
+            padding-top: 15px;
+            font-weight: bolder;
+        }
+        .share h2 {
+            font-weight: bolder;
+        }
+        .share p {
+            font-size: 1.2rem;
+            font-style: oblique;
+        }
+        .email-detail {
+            width: 1042px;
+            float: left;
+            height: 690px;
+            background-color: green;
+            margin-bottom: 10px;
+        }
+        .email-detail h1 {
+            font-weight: bold;
+            font-size: 2rem;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .container {
+            width: 1042px;
+            float: left;
+        }
+        .container h1 {
+            padding-top: 40px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        .container p {
+            font-style: oblique;
+            font-size: 1.3rem;
+            font-style: oblique;
+        }
+        .container a {
+            padding: 10px 53px 10px 47px;
+            color: wheat;
+            background-color: rgb(20, 240, 20);
+            font-weight: bold;
+            border-radius: 10px;
+            margin-left: 70px;
+            text-decoration: none;
+        }
+        .container a:hover {
+            width: 300px;
+            color: wheat;
+            background-color: rgb(241, 17, 36);
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .container h2 {
+            font-style: oblique;
+            font-size: 1.9rem;
+            font-style: oblique;
+            margin-bottom: 30px;
+            color: #32f7f7;
+        }
+    }

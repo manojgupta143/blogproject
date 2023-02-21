@@ -1,0 +1,38 @@
+<!doctype html> {% extends "blog/base.html" %} {% block title_block %} detail Page {% endblock%} {% block body_block %}
+
+<div class="continar-detail">
+    <h1>This Is Your Content</h1>
+    <h2>{{post.title|title}}</h2>
+    <div class="scroll">
+        <p>Publised of {{post.publish|title}} Published By {{post.author|title}}</p>
+        <p>{{post.body|title}}.</p>
+    </div>
+    <a href="{%url 'send_By_Mail' post.id %}" class="btn btn-primary btn-lg">Click here To Share By Email</a>
+</div>
+{% with comments.count as comments_count %}
+<h5> Comment{{comments_count|pluralize}}({{comments_count}})</h5>
+{% endwith%}
+<div class="commets">
+    {%if comments %} {%for comment in comments %}
+    <p> comment {{forloop.counter}} by {{comment.name}} on {{comment.created}}
+    </p>
+    <div class="cb">{{comment.body|linebreaks}}</div>
+    <hr> {%endfor%} {%else%}
+    <div class="alert alert-danger" role="alert">
+        There are NO Comments Yet !!!
+    </div>
+    {%endif%} {%if csubmit %}
+    <div class="alert alert-danger" role="alert">
+        Your Comment Added Succefully
+    </div>
+</div>
+
+{%else%}
+<div class="comment-form">
+    <h5>Add Your Comment</h5>
+    <form method="post">
+        {{form.as_p}} {%csrf_token%}
+        <input class="btn btn-primary btn-lg" type="submit" name="" value="Submit Comment">
+    </form>
+</div>
+{%endif%} {%endblock%}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>{%extends "blog/base.html"%} {% block title_block %} Signup {% endblock %} {% block body_block %}
+<div class="card">
+    <div class="text-center">
+        <h3>Create an account</h3> <span class="abt">Already have an account? <a href="/accounts/login" >Login</a></span>
+    </div>
+    <div class="form mt-3">
+        <form method="post">{% csrf_token %}
+            <div class="form-outline">
+                {%for fm in form%} {{fm.label_tag}} {{fm}}{{fm.errors|striptags}}<br> <br> {%endfor%}
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Signup">
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock%}

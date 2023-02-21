@@ -1,0 +1,13 @@
+<!DOCTYPE html> {%extends 'blog/base.html'%} {%block body_block%}
+
+<div class="continar">
+    <h3>Login</h3><span>Don't  have an account? <a href="{% url  'signup/' %}">SignUp</a></span>
+
+    <form method="post">
+        <form method="post">
+            {{form.as_p}} {%csrf_token%} <button class="btn btn-primary btn-md" data-toggle="button" type="submit">Login</button>
+        </form>
+
+</div>
+
+{%endblock%}
